@@ -4,7 +4,7 @@ Lubuntu with OpenJDK 8 in Docker.
 
 ## Detailed Information
 
-OS: Ubuntu 18.04
+OS: Ubuntu 18.10
 
 Desktop Environment: LXQt
 
@@ -44,7 +44,7 @@ docker run -d \
     -v /workdir:/workdir \
     -v /home:/home_host \
     --cap-add=SYS_PTRACE \
-    dclong/lubuntu-jdk
+    dclong/lubuntu-jdk:18.10
 ```
 
 ```
@@ -56,7 +56,7 @@ docker run -d \
     -v $HOME/dropbox:/home/`id -un`/Dropbox \
     -v /home:/home_host \
     --cap-add=SYS_PTRACE \
-    dclong/xubuntu-jdk
+    dclong/xubuntu-jdk:18.10
 ```
 
 A default user `dclong` with password `dclong` is used if not specified when running the docker image.
